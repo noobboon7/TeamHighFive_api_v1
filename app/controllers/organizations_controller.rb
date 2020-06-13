@@ -1,7 +1,7 @@
 class OrganizationsController < ApplicationController
   def index
-    @organizations = Organizations.all
-    render json:@organizations
+    @organizations = Organization.all
+    render json: @organizations, include: :programs
   end  
 
   
