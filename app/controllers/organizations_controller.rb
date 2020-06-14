@@ -8,7 +8,7 @@ class OrganizationsController < ApplicationController
     @organization = Organization.find(params[:id])
   
 
-    render json: @organization
+    render json: @organization, include: :programs 
   end 
   
 end
