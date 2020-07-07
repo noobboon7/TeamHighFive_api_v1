@@ -7,7 +7,7 @@ class CreateOrganizations < ActiveRecord::Migration[6.0]
       t.string :url
       t.string :media_url
       t.integer :phone_number
-
+      
       t.timestamps
     end
   end
